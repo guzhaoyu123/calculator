@@ -1,0 +1,61 @@
+.container {
+  width: 320px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 80px repeat(5, 1fr);
+  grid-gap: 1px;
+  border: 2px solid #47476b;
+  padding: 5px;
+  background-color: black;
+  color: white;
+  grid-auto-flow: row dense;
+}
+.container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container :nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  background-color: black;
+}
+.container :nth-child(2) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: rgb(172, 57, 57);
+}
+.container :nth-child(5) {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.container :nth-child(6) {
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+.number-color :nth-of-type(1) {
+  grid-column-start: 1;
+}
+.sign-color {
+  background-color: grey;
+}
+.number-color {
+  background-color: #4d4d4d;
+}
+.container :nth-last-child(2) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.container :nth-child(7) {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 7;
+  background-color: rgb(0, 68, 102);
+}
